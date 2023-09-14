@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 200vh;
+        }
+    .navbar{
+        background-color: rgb(128, 128, 128);
+        display: block;
+        overflow: hidden;
+    }
+    a{
+        float: right;
+        padding: 13px 15px;
+        color: bisque;
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: rgb(250, 250, 250);
+        color: black;
+    }
+    img{
+        width: 120px;
+        height: 120px;
+    }
+    .box{
+        width: inherit;
+        height: inherit;
+        position: absolute;
+    }
+    .box-one{
+        float: left;
+        top: 9%;
+        left: 0;
+    }
+    .box-two{
+        float: right;
+       bottom: 0;
+        left: 0;
+    }
+    .box-three{
+        float: right;
+        bottom: 1;
+          right: 0%;
+    }
+    .box-four{
+        float: right;
+        bottom: 0;
+        right: 0;
+    }
+    .parent {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .image1 {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .image2 {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+      }
+      .image3 {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">What We Do</a>
+        <a href="#">About Us</a>     
+        <a href="#">Our Contacts</a>
+</div>
+<br>
+<div class="container">
+    <div class="box box-one"><img src="ad.jpg"></div>
+    <div class="box box-two"><img src="img.jpg"></div>
+    <div class="box box-three"><img src="mag.jpg"></div>
+    <div class="box box-four"><img src="digi.jpg"></div>
+</div>
+<div class="parent">
+    <img class="image1" src="ad.jpg" />
+    <img class="image2" src="mag.jpg" />
+    <img class="image3" src="img.jpg"
+  </div>
+
+</body>
+</html>      
